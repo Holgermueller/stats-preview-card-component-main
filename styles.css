@@ -20,11 +20,11 @@ main {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-color: hsl(277, 64%, 61%);
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 
 img {
-  opacity: 0.4;
+  opacity: 0.5;
   display: block;
 }
 
@@ -113,7 +113,6 @@ p {
     display: flex;
     flex-direction: row-reverse;
     border-radius: 15px;
-
     text-align: left;
   }
 
