@@ -9,7 +9,7 @@ html {
 
 main {
   width: 90%;
-  margin: 5% auto;
+  margin: 5% auto 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -19,13 +19,13 @@ main {
 .image-section {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: hsl(277, 64%, 61%);
-  filter: brightness(0.8);
+  background-color: rgba(170, 92, 219, 0.9);
 }
 
 img {
-  opacity: 0.5;
+  opacity: 0.4;
   display: block;
+  filter: grayscale(100%);
 }
 
 .mobile-image {
@@ -43,11 +43,6 @@ img {
   background-color: hsl(244, 38%, 16%);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-
-.copy,
-.stat-heading {
-  font-weight: 400;
 }
 
 h1,
@@ -76,7 +71,7 @@ p {
 
 .copy {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 15px;
+  font-size: 0.95rem;
   line-height: 26px;
   margin-bottom: 40px;
   width: 70%;
@@ -84,7 +79,7 @@ p {
 }
 
 .stat {
-  font-size: 30px;
+  font-size: 2.5rem;
   margin-bottom: 12px;
 }
 
@@ -98,22 +93,24 @@ p {
   font-size: 11px;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  margin: 4;
+  margin: 4px;
 }
+
 .attribution a {
   color: hsl(277, 64%, 61%);
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    height: 100vh;
-  }
   main {
     width: 75%;
     display: flex;
     flex-direction: row-reverse;
-    border-radius: 15px;
     text-align: left;
+  }
+
+  .image-section,
+  .text-section {
+    width: 50%;
   }
 
   .mobile-image {
@@ -124,11 +121,8 @@ p {
     display: block;
     height: 100%;
     width: 100%;
-  }
-
-  .image-section,
-  .text-section {
-    width: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 
   .image-section {
